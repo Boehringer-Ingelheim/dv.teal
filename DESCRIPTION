@@ -1,0 +1,40 @@
+Package: dv.teal
+Title: DaVinci's teal wrapper package
+Description: The dv.teal package provides a wrapper function to include teal modules within the DaVinci framework.
+Version: 2.1.0
+Authors@R: 
+    c(
+      person("Boehringer-Ingelheim Pharma GmbH & Co.KG", role = c("cph", "fnd")),
+      person("Korbinian", "Matthias", email = "korbinian.matthias@boehringer-ingelheim.com", role = c("aut", "cre")),
+      person("Ming", "Yang", email = "ming.yang.ext@boehringer-ingelheim.com", role = c("aut"))            
+    )
+License: Apache License (>= 2)
+Depends:
+    R (>= 4.0),
+    dplyr
+Imports:
+    checkmate,
+    dv.manager,
+    lifecycle,
+    magrittr,
+    pharmaversesdtm,
+    shiny,
+    shinytest2,
+    teal.data (>= 0.5.0),
+    teal.modules.clinical (>= 0.9.0),
+    teal.modules.general (>= 0.3.0),
+    teal.slice (>= 0.5.0),
+    teal.transform (>= 0.5.0)
+Suggests:
+    knitr,
+    rmarkdown,
+    teal.osprey (> 0.1.16)
+VignetteBuilder:
+    knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Remotes: boehringer-ingelheim/dv.manager@main
