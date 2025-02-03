@@ -33,12 +33,7 @@ Wrapper function for teal modules to enable their use with \code{dv.manager}
 }
 \examples{
 \dontrun{
-dm <- pharmaversesdtm::dm |>
-dplyr::mutate(
-  ARM = as.factor(dplyr::if_else(ARM == "", "<EMPTY>", ARM)),
-  ACTARM = as.factor(dplyr::if_else(ACTARM == "", "<EMPTY>", ACTARM)),
-  ARMCD = as.factor(dplyr::if_else(ARMCD == "", "<EMPTY>", ARMCD))
-)
+dm <- pharmaversesdtm::dm
 
 ae <- pharmaversesdtm::ae
 
@@ -82,8 +77,8 @@ mod_events <- teal.modules.clinical::tm_t_events(
 
 module_list <- list(
   "Events" = mod_teal(
-    "events",
-    mod_events,
+    module_id = "events",
+    teal_module = mod_events,
     j_keys = j_keys
   )
 )

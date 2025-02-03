@@ -6,7 +6,7 @@
 \alias{dv.teal-package}
 \title{dv.teal: DaVinci's teal wrapper package}
 \description{
-The dv.teal package provides wrapper functions to include teal modules within the DaVinci framework.
+The dv.teal package provides a wrapper function to include teal modules within the DaVinci framework.
 }
 \author{
 \strong{Maintainer}: Korbinian Matthias \email{korbinian.matthias@boehringer-ingelheim.com}
@@ -14,6 +14,11 @@ The dv.teal package provides wrapper functions to include teal modules within th
 Authors:
 \itemize{
   \item Ming Yang \email{ming.yang.ext@boehringer-ingelheim.com}
+}
+
+Other contributors:
+\itemize{
+  \item Boehringer-Ingelheim Pharma GmbH & Co.KG [copyright holder, funder]
 }
 
 }
