@@ -9,3 +9,4 @@ docs/
 shiny_bookmarks/
 /doc/
 /Meta/
+man/*.Rd
