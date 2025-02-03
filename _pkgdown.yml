@@ -15,3 +15,7 @@ reference:
 - title: "Wrapper function"
 - contents:
   - mod_teal
+- title: "Mock functions"
+- contents:
+  - mock_mod_teal
+  - mock_mod_teal_multi
