@@ -5,7 +5,11 @@ navbar:
   type: inverse
   structure:
     left: [intro, reference, articles, tutorials, news, qc]
+    right: [search, github]
   components:
+    github:
+      icon: fa-github
+      href: https://github.com/Boehringer-Ingelheim/dv.teal/
     qc:
       text: Quality Control
       href: articles/qc.html
