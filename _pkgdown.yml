@@ -1,0 +1,21 @@
+template:
+  bootstrap: 5
+
+navbar:
+  type: inverse
+  components:
+    qc:
+      text: Quality Control
+      href: articles/qc.html
+
+home:
+  title: dv.teal
+
+reference:
+- title: "Wrapper function"
+- contents:
+  - mod_teal
+- title: "Mock functions"
+- contents:
+  - mock_mod_teal
+  - mock_mod_teal_multi
