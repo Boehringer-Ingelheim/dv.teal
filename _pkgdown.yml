@@ -4,7 +4,7 @@ template:
 navbar:
   type: inverse
   structure:
-    left: [intro, reference, articles, tutorials, news, qc]
+    left: [intro, reference, tutorials, news, qc] # articles removed because it only included qc
     right: [search, github]
   components:
     github:
