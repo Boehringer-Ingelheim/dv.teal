@@ -183,5 +183,13 @@ mod_teal <- function(
     },
     module_id = module_id
   )
+
+  if (length(teal_module$datanames) > 1 || teal_module$datanames != "all") {
+    mod$meta <- list(
+      dataset_info = list(
+        all = teal_module$datanames
+      )
+    )
+  }
   return(mod)
 }

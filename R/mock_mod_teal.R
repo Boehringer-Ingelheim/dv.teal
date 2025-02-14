@@ -6,6 +6,7 @@
 #' @export
 #'
 mock_mod_teal <- function() {
+  library(teal.modules.clinical)
   dm <- pharmaversesdtm::dm |>
     dplyr::mutate(
       ARM = as.factor(dplyr::if_else(ARM == "", "<EMPTY>", ARM)),
@@ -76,6 +77,8 @@ mock_mod_teal <- function() {
 #' @export
 #'
 mock_mod_teal_multi <- function() {
+  library(teal.modules.clinical)
+  library(teal.modules.general)
 
   dm <- pharmaversesdtm::dm |>
     dplyr::mutate(
