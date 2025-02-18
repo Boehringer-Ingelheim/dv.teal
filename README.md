@@ -67,7 +67,7 @@ j_key <- teal.data::join_keys(
   )
 )
 
-tm_var <- teal.modules.general::tm_variable_browser(
+tm_var <- tm_variable_browser(
   datasets_selected = c("dm", "ae"),
   parent_dataname = "dm"
 )

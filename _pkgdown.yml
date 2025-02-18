@@ -4,8 +4,12 @@ template:
 navbar:
   type: inverse
   structure:
-    left: [intro, reference, articles, tutorials, news, qc]
+    left: [intro, reference, tutorials, news, qc] # articles removed because it only included qc
+    right: [search, github]
   components:
+    github:
+      icon: fa-github
+      href: https://github.com/Boehringer-Ingelheim/dv.teal/
     qc:
       text: Quality Control
       href: articles/qc.html
