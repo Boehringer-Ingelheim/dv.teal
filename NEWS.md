@@ -1,3 +1,6 @@
+# dv.teal 2.1.1
+- Change checkmate check to be able to deal with the newly introduced transformators argument in {teal.modules.clinical}(version 0.10.0) 
+
 # dv.teal 2.1.0
 - GitHub release
 - remove deprecated functions
