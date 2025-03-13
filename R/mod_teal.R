@@ -86,7 +86,13 @@ mod_teal <- function(
 
   checkmate::assert_string(module_id)
   checkmate::assert_multi_class(teal_module, "teal_module")
-  checkmate::assert_set_equal(names(teal_module), c("label", "server", "ui", "datanames", "server_args", "ui_args"))
+  # with teal.modules.clinical version 0.10.0 transformators were introduced
+  # to account for that and still be able to work with older versions the if statement is needed
+  if (length(names(teal_module)) == 6) {
+    checkmate::assert_set_equal(names(teal_module), c("label", "server", "ui", "datanames", "server_args", "ui_args"))
+  } else {
+    checkmate::assert_set_equal(names(teal_module), c("label", "server", "ui", "datanames", "server_args", "ui_args", "transformators"))
+  }
   checkmate::assert_multi_class(j_keys, c("join_keys", "list"))
 
   mod <- list(
