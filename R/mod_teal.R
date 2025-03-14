@@ -91,7 +91,10 @@ mod_teal <- function(
   if (length(names(teal_module)) == 6) {
     checkmate::assert_set_equal(names(teal_module), c("label", "server", "ui", "datanames", "server_args", "ui_args"))
   } else {
-    checkmate::assert_set_equal(names(teal_module), c("label", "server", "ui", "datanames", "server_args", "ui_args", "transformators"))
+    checkmate::assert_set_equal(
+      names(teal_module),
+      c("label", "server", "ui", "datanames", "server_args", "ui_args", "transformators")
+      )
   }
   checkmate::assert_multi_class(j_keys, c("join_keys", "list"))
 
