@@ -1,7 +1,7 @@
 Package: dv.teal
 Title: DaVinci's teal wrapper package
 Description: The dv.teal package provides a wrapper function to include teal modules within the DaVinci framework.
-Version: 2.1.0
+Version: 2.1.1
 Authors@R: 
     c(
       person("Boehringer-Ingelheim Pharma GmbH & Co.KG", role = c("cph", "fnd")),
