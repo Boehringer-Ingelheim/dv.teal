@@ -1,3 +1,6 @@
+# dv.teal 2.1.1-9000
+- Change checkmate check to only check for elements that are used in the wrapper function
+
 # dv.teal 2.1.1
 - Change checkmate check to be able to deal with the newly introduced transformators argument in {teal.modules.clinical}(version 0.10.0) 
 
