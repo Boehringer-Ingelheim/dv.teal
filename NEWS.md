@@ -1,4 +1,4 @@
-# dv.teal 2.1.1-9000
+# dv.teal 2.1.2
 - Change checkmate check to only check for elements that are used in the wrapper function
 
 # dv.teal 2.1.1
